@@ -1,3 +1,2 @@
 I developed a Shiny app that calculates standard errors and plots confidence intervals for a selected factor within a stratum, based on multiple samples of a census. The app uses observe, reactives, and renderUi for its 8 components.
  
-![Working](https://drive.google.com/drive/u/1/my-drive)
