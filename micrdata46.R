@@ -1,5 +1,6 @@
+a<-1
 fee<-function(x){
-
+  x$urbanity<-substr(x[1],5,5) |> stringi::stri_replace_all_regex(pattern=seq(1:2),replacement= code$urbanity,vectorize_all = F)
   x$ownership<-substr(x[1],6,6) |> stringi::stri_replace_all_regex(pattern=seq(1:3),replacement= code$ownership,vectorize_all = F)
   x$housetype<-substr(x[1],7,7) |> stringi::stri_replace_all_regex(pattern=seq(1:4),replacement= na.omit(code$house_type),vectorize_all = F)
   x$electricity<-substr(x[1],8,8) |> stringi::stri_replace_all_regex(pattern=seq(1:2),replacement= na.omit(code$electricity),vectorize_all = F)
@@ -109,4 +110,3 @@ server <- function(input, output,session) {
   })
 }
 shinyApp(ui = ui, server = server)
-merge
